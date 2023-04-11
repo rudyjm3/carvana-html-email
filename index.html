@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+   <!-- CSS Reset : BEGIN -->
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+      html,
+      body {
+         margin: 0;
+         background-color: #cccccc;
+      }
+      table {
+         border-spacing: 0;
+      }
+      td {
+         padding: 0;
+      }
+      img {
+         border: 0;
+      }
+      .wrapper {
+         width: 100%;
+         table-layout: fixed;
+         /* background-color: #f7f7f7; */
+         padding-top: 20px;
+         padding-bottom: 60px;
+      }
+      .main {
+         background-color: #f7f7f7;
+         padding: 10px;
+         margin: 0 auto;
+         width: 100%;
+         max-width: 600px;
+         border-spacing: 0;
+         font-family: sans-serif;
+         color: #171a1b;
+      }
+      .two-col {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+      }
+      .chat-btn {
+         position: relative;
+         top: 7px;
+         right: 2px;
+         width: 115px;
+         color: white;
+         font-weight: 600;
+         font-size: 0.75rem;
+         padding: 10px;
+         border: none;
+         border-radius: 3px;
+         background-color: #00AED9;
+      }
+      .chat-btn::before {
+         position: absolute;
+         top: -15px;
+         right: 0;
+         content: "Available 24/7";
+         font-weight: 400;
+         color: #333;
+      }
+      .header-title {
+         text-align: center;
+         font-size: 3.7rem;
+         font-weight: 800;
+         line-height: 1;
+      }
+   </style>
+
+   <title>Carvana HTML Email - Demo</title>
+</head>
+
+
+<body style="background-color: #646464;">
+<!---- START OF HTML EMAIL ---->
+   <center class="wrapper">
+      <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0"> 
+<!-- LOGO SECTION --> 
+         <tr>
+            <td>
+               <table width="100%" border="0"cellspacing="0"cellpadding="0">
+                  <tr class="two-col" style="margin-bottom: 30px;">
+                     <td>
+                        <img class="logo" src="images/logo.png" alt="Carvana Logo" style="width:191px;">
+                     </td>
+                     <td>
+                        <button class="chat-btn">CHAT NOW</button>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr> 
+<!-- HEADER / HERO SECTION -->
+         <tr>
+            <td>
+               <table width="100%" border="0"cellspacing="0"cellpadding="0">
+                  <tr>
+                     <td>
+                        <p class="header-title">CHEERS TO <br> 
+                        GREAT DEALS!</p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>              
+      </table>
+   </center>
+<!---- END OF HTML EMAIL----------------->
+
+
+</body>
+</html>
