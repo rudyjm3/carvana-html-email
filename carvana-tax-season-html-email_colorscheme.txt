@@ -2,7 +2,7 @@
 Colors:
 
 Brand-blue #00AED9
-Blue #00619E  *Use for title text as well
+Blue #183558  *Use for title text as well
 Light grey #AAB1C7
 Mid grey #757989  * Use for text
 
@@ -11,3 +11,5 @@ Typography:
 font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 22px;
+
+#00619E
