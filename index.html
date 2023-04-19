@@ -16,10 +16,7 @@
       }
       html,
       body {
-         font-family: Helvetica,Arial,sans-serif;
          font-size: 14px;
-         line-height: 22px;
-
          margin: 0;
          background-color: #cccccc;
       }
@@ -35,27 +32,37 @@
       .wrapper {
          width: 100%;
          table-layout: fixed;
-         /* background-color: #f7f7f7; */
+         background-color: #ccc;
          padding-top: 20px;
          padding-bottom: 60px;
-         /* border: 1px solid red; */
       }
       .main {
-         background-color: #FFFFFF;
-         padding: 10px;
-         margin: 0 auto;
+         background-color: #fff;
+         margin: 0 auto;         
          width: 100%;
          max-width: 600px;
          border-spacing: 0;
-         font-family: sans-serif;
+         font-family: Helvetica,Arial,sans-serif;
          color: #171a1b;
          border: 1px solid red;
       }
+      a {
+         color: #00aed9;
+      }
       .two-col {
-         display: flex;
+         /* display: flex;
          justify-content: space-between;
-         align-items: center;
+         align-items: center; */
          position: relative;
+         text-align: center;
+         font-size: 0;
+      }
+      .two-col .col {
+         width: 100%;
+         max-width: 288px;
+         display: inline-block;
+         vertical-align: top;
+         text-align: center;
       }
       .chat-btn {
          position: relative;
@@ -63,30 +70,132 @@
          right: 2px;
          width: 115px;
          color: white;
-         font-weight: 600;
-         font-size: 0.75rem;
+         font-weight: 700;
+         font-size: 0.85rem;
          padding: 10px;
          border: none;
          border-radius: 3px;
          background-color: #00AED9;
+         cursor: pointer;
       }
       .chat-btn::before {
          position: absolute;
-         top: -15px;
+         top: -17px;
          right: 0;
          content: "Available 24/7";
          font-weight: 400;
          color: #333;
       }
-      .header-title {
-         text-align: center;
-         font-size: 4rem;
-         font-weight: 800;
-         line-height: 1.2;
+    
+      .hero-image {
+         width: 100%;
+      } 
+      .name {
+         font-size: 1.8rem; 
+         font-weight: 700; 
+         margin-bottom: 1.8rem;
+      }
+      .sales-message {
+         line-height: 1.5;
+         color: #757989;
+         margin-bottom: 1.6rem;
+      }
+      .sales-message a {
+         text-decoration: none;
+      }
+      .sales-message-list {
+         position: relative;
+         padding-left: 42px;
+      }
+      .list-item-1,.list-item-2 {
+         position: relative;
+         font-weight: bold;
+         font-size: 1.1rem;
+         color: #183558;
+         margin-bottom: 60px;
+      }
+      .list-item-1 {
+         padding-left: 10px;
+         margin-bottom: 46px;
+      }
+      .list-item-1::marker {
+         font-size: 1.5rem;
          color: #183558;
       }
-      .header-image {
+      .list-item-1::after {
+         position: absolute;
+         top: 30px;
+         right: 41%;
+         width: 200px;
+         content: "Fair, no-haggle pricing";
+         font-weight: 500;
+         line-height: 1.5;
+         color: #757989; 
+      }
+      .list-item-2 {
+         padding-left: 10px;
+         
+      }
+      .list-item-2::marker {
+         font-size: 1.5rem;
+         color: #183558;
+      }
+      .list-item-2::after {
+         position: absolute;
+         top: 30px;
+         right: 15.5%;
+         width: 292px;
+         content: "Great Deal vehicles are high quality without breaking the bank";
+         font-weight: 500;
+         line-height: 1.5;
+         color: #757989; 
+      }
+      .cta-btn2 {
+         font-size: 0.90rem;
+         font-weight: 700;
+         letter-spacing: 1px;
+         color: #fff;
+         width: 317px;
+         padding: 20px;
+         margin-top: 30px;         
+         border: none;
+         border-radius: 3px;
+         background-color: #00AED9;
+         cursor: pointer;
+      }
+
+      .vehicle-list-title {
+         font-size: 1.8rem;
+         font-weight: 600;
          width: 100%;
+      }
+      .gallery-col {
+         display: inline-block;
+         text-align: center;
+         width: 50%;
+         margin-bottom: 40px;
+      }
+      .gallery-col:nth-child(5) {
+         margin-bottom: 10px;
+      }
+      .gallery-col:nth-child(6) {
+         margin-bottom: 10px;
+      }
+      .gallery-img {
+         width: 95%;
+      }
+      .search-vehicles-btn {
+         font-size: 0.95rem;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+         color: #fff;
+         width: 317px;
+         padding: 20px;
+         margin-top: 30px;  
+         border: none;
+         border-radius: 3px;
+         background-color: #00AED9;
+         cursor: pointer;
       }
    </style>
 
@@ -98,28 +207,39 @@
 <!---- START OF HTML EMAIL ---->
    <center class="wrapper">
       <table class="main" width="100%" border="0"cellspacing="0"cellpadding="0"> 
-<!-- LOGO SECTION --> 
+<!-- HEADER SECTION --> 
          <tr>
-            <td>
-               <table width="100%" border="0"cellspacing="0"cellpadding="0">
-                  <tr class="two-col" style="margin-bottom: 30px;">
-                     <td>
-                        <img class="logo" src="images/logo.png" alt="Carvana Logo" style="width:191px;">
-                     </td>
-                     <td>
-                        <button class="chat-btn">CHAT NOW</button>
+            <td style="padding: 10px">
+               <table width="100%">
+                  <tr>
+                     <td class="two-col" style="margin-bottom: 30px;">
+                        <table class="col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="logo" src="images/logo.png" alt="Carvana Logo" width="191" title="Carvana Logo">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="col" style="padding-left: 176px; padding-top:11px;" height="47.75">
+                           <tr>
+                              <td>
+                                 <button class="chat-btn">CHAT NOW</button>
+                              </td>
+                           </tr>   
+                        </table>
                      </td>
                   </tr>
                </table>
             </td>
          </tr> 
-<!-- HEADER / HERO SECTION -->
+<!-- HERO SECTION -->
          <tr>
             <td>
-               <table width="100%" border="0"cellspacing="0"cellpadding="0">
+               <table width="100%" style="margin-bottom:4.15rem;">
                   <tr>
                      <td>
-                        <img class="header-image" src="images/header-image.png" alt="Image of SUV">
+                        <img class="hero-image" src="images/header-image.png" alt="Image of SUV">
                      </td>
                   </tr>
                </table>
@@ -128,21 +248,106 @@
 <!-- TEXT BODY --> 
          <tr>
             <td>
-               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <table width="100%" style="padding:0 100px;">
                   <tr>
                      <td>
-                        <p class="anme">Hey</p>
+                        <p class="name">Hey Rudy,</p>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <p>Take advantage of your tax refund this year and get a special deal on your next ride!</p>
+                        <p class="sales-message">Take advantage of your tax refund this year and get a special deal on your next ride! From <a href="#">SUVs</a> to <a href="#">trucks</a>, and <a href="#">sedans</a> to <a href="#">sports cars</a>, our Great Deals ensure you’re getting the right vehicle for you while saving more of your hard-earned money. Plus, each Great Deal comes with:</p>
                      </td>
                   </tr>
-                  
+                  <tr>
+                     <td>
+                        <ul class="sales-message-list">
+                           <li class="list-item-1">No surprises.</li>
+                           <li class="list-item-2">Savings!</li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align:center;">
+                        <button class="cta-btn2">FIND YOUR NEXT RIDE</button>
+                     </td>
+                  </tr>
                </table>
             </td>
-         </tr>                  
+         </tr>  
+ <!-- VEHICLE LIST SECTION -->    
+         <tr>
+            <td style="padding: 20px">
+               <table width="100%">
+                  <tr>
+                     <td style="padding:45px 0 40px 0;">
+                        <p class="vehicle-list-title">Great Deals on great vehicles</p>
+                     </td>
+                  </tr>
+      <!-- VEHICLE IMAGE GALLERY -->
+                  <tr>
+                     <td class="two-col">
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-1.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-2.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-3.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-4.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-5.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                        <table class="gallery-col">
+                           <tr>
+                              <td>
+                                 <a href="#"><img class="gallery-img" src="images/vehicle-6.png" alt="Vehicle image">
+                                 </a> 
+                              </td>
+                           </tr>   
+                        </table>
+                     </td>
+                  </tr>
+            <!-- SEARCH VEHICLES BUTTON -->
+                  <tr>
+                     <td style="text-align:center;">
+                        <button class="search-vehicles-btn">SEARCH ALL VEHICLES</button>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         
+
       </table>
    </center>
 <!---- END OF HTML EMAIL----------------->

@@ -3,6 +3,7 @@ Colors:
 
 Brand-blue #00AED9
 Blue #183558  *Use for title text as well
+Mid-dark-blue #00619e   *Use for list dots, and background color
 Light grey #AAB1C7
 Mid grey #757989  * Use for text
 
